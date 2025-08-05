@@ -39,7 +39,8 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
         });
       } catch (e) {
         setState(() {
-          errorMessage = 'Camera permission denied. Please allow camera access in your browser settings.';
+          errorMessage =
+              'Camera permission denied. Please allow camera access in your browser settings.';
           _permissionChecked = true;
         });
       }
@@ -81,7 +82,9 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
                   children: [
                     const Icon(Icons.error, color: Colors.red, size: 48),
                     const SizedBox(height: 16),
-                    Text(errorMessage!, textAlign: TextAlign.center, style: const TextStyle(fontSize: 16)),
+                    Text(errorMessage!,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(fontSize: 16)),
                     const SizedBox(height: 16),
                     ElevatedButton(
                       onPressed: () => Navigator.pop(context),
@@ -105,7 +108,8 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Icon(Icons.error, color: Colors.red, size: 48),
+                              const Icon(Icons.error,
+                                  color: Colors.red, size: 48),
                               const SizedBox(height: 16),
                               Text(
                                 'Camera error: $error',
@@ -136,4 +140,4 @@ class _QRScannerScreenState extends State<QRScannerScreen> {
             ),
     );
   }
-} 
+}

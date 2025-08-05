@@ -85,7 +85,7 @@ class _SplashScreenState extends State<SplashScreen>
                         borderRadius: BorderRadius.circular(30),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.3),
+                            color: Colors.black.withValues(alpha: 0.3),
                             blurRadius: 20,
                             offset: const Offset(0, 10),
                           ),
@@ -139,7 +139,7 @@ class _SplashScreenState extends State<SplashScreen>
                       style: GoogleFonts.poppins(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white.withOpacity(0.9),
+                        color: Colors.white.withValues(alpha: 0.9),
                         letterSpacing: 0.5,
                       ),
                     )
@@ -171,7 +171,7 @@ class _SplashScreenState extends State<SplashScreen>
                       child: CircularProgressIndicator(
                         strokeWidth: 3,
                         valueColor: AlwaysStoppedAnimation<Color>(
-                          Colors.white.withOpacity(0.8),
+                          Colors.white.withValues(alpha: 0.8),
                         ),
                       ),
                     ).animate(controller: _fadeController).fadeIn(
@@ -187,7 +187,7 @@ class _SplashScreenState extends State<SplashScreen>
                       style: GoogleFonts.poppins(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Colors.white.withOpacity(0.8),
+                        color: Colors.white.withValues(alpha: 0.8),
                       ),
                     ).animate(controller: _fadeController).fadeIn(
                           delay: const Duration(milliseconds: 500),
@@ -234,7 +234,7 @@ class _SplashScreenState extends State<SplashScreen>
                       style: GoogleFonts.poppins(
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white.withOpacity(0.6),
+                        color: Colors.white.withValues(alpha: 0.6),
                       ),
                     ).animate(controller: _fadeController).fadeIn(
                           delay: const Duration(milliseconds: 2000),
@@ -257,10 +257,10 @@ class _SplashScreenState extends State<SplashScreen>
           width: 50,
           height: 50,
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(15),
             border: Border.all(
-              color: Colors.white.withOpacity(0.3),
+              color: Colors.white.withValues(alpha: 0.3),
               width: 1,
             ),
           ),
@@ -276,7 +276,7 @@ class _SplashScreenState extends State<SplashScreen>
           style: GoogleFonts.poppins(
             fontSize: 12,
             fontWeight: FontWeight.w500,
-            color: Colors.white.withOpacity(0.9),
+            color: Colors.white.withValues(alpha: 0.9),
           ),
         ),
       ],

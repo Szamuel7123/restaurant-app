@@ -143,9 +143,9 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              AppColors.primary.withOpacity(0.1),
-              AppColors.secondary.withOpacity(0.1),
-              AppColors.accent.withOpacity(0.1),
+              AppColors.primary.withValues(alpha: 0.1),
+              AppColors.secondary.withValues(alpha: 0.1),
+              AppColors.accent.withValues(alpha: 0.1),
             ],
           ),
         ),
@@ -170,7 +170,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
-                              color: AppColors.primary.withOpacity(0.3),
+                              color: AppColors.primary.withValues(alpha: 0.3),
                               blurRadius: 15,
                               offset: const Offset(0, 5),
                             ),
@@ -462,7 +462,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     children: [
                       Expanded(
                         child: Divider(
-                          color: AppColors.textHint.withOpacity(0.3),
+                          color: AppColors.textHint.withValues(alpha: 0.3),
                           thickness: 1,
                         ),
                       ),
@@ -479,7 +479,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                       ),
                       Expanded(
                         child: Divider(
-                          color: AppColors.textHint.withOpacity(0.3),
+                          color: AppColors.textHint.withValues(alpha: 0.3),
                           thickness: 1,
                         ),
                       ),
